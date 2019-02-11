@@ -1,18 +1,20 @@
-module.exports = function(number) {  
+module.exports = function(number) {
+  let result;  
   if (number % 3 === 0 && number % 5 === 0)
   {
-    return "FizzBuzz";                    
+    result = "FizzBuzz";                    
   }
   else 
     if(number % 3 === 0)
     {
-      return "Fizz";
+      result = "Fizz";
     }
     else 
       if(number % 5 === 0)
       {
-        return "Buzz";
+        result = "Buzz";
       }
       else
-        return number;
+        result = number;
+  return result;
 }

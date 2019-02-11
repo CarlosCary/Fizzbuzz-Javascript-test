@@ -1,7 +1,6 @@
 var assert = require('assert');
 var expect = require('chai').expect;
 var should = require('chai').should();
-// import { Fizzbuzz } from '../fizzbuzz.js';
 
 describe('Cadenas devueltas por la funcion fizzbuzz', function(){
     
