@@ -10,13 +10,16 @@ describe('Cadenas devueltas por la funcion fizzbuzz', function(){
         fizzbuzz = require('../fizzbuzz.js');
     });
 
-    it('Deberia devolver Fizz', function(){
+    it('El numero 3 como parametro deberia devolver Fizz', function(){
         assert.equal(fizzbuzz(3), "Fizz");
     });
     
-    it('Deberia devolver Buzz', function(){
+    it('El numero 5 como parametro deberia devolver Buzz', function(){
         assert.equal(fizzbuzz(5), "Buzz");
     });
 
-   
+    it('El numero 15 como parametro deberia devolver FizzBuzz', function(){
+        assert.equal(fizzbuzz(15), "FizzBuzz");
+    });
+
 });
