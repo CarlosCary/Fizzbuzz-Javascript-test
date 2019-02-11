@@ -22,4 +22,7 @@ describe('Cadenas devueltas por la funcion fizzbuzz', function(){
         assert.equal(fizzbuzz(15), "FizzBuzz");
     });
 
+    it('El numero 7 deberia devolver el numero 7', function(){
+        assert.equal(fizzbuzz(7), 7);
+    });
 });
