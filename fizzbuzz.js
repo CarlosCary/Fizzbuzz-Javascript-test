@@ -16,12 +16,3 @@ module.exports = function(number) {
       else
         return number;
 }
-
-// export class Fizzbuzz {
-//   constructor(number) {
-//     this.number = number;
-//   }
-//   cadena() {
-//     return "Fizz";
-//   }
-// }

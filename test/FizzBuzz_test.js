@@ -3,7 +3,7 @@ var expect = require('chai').expect;
 var should = require('chai').should();
 // import { Fizzbuzz } from '../fizzbuzz.js';
 
-describe('Cadena Fizz.', function(){
+describe('Cadenas devueltas por la funcion fizzbuzz', function(){
     
     let fizzbuzz;
     beforeEach(function() {
@@ -14,4 +14,9 @@ describe('Cadena Fizz.', function(){
         assert.equal(fizzbuzz(3), "Fizz");
     });
     
+    it('Deberia devolver Buzz', function(){
+        assert.equal(fizzbuzz(5), "Buzz");
+    });
+
+   
 });
