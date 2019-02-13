@@ -1,17 +1,30 @@
-module.exports = function(number) {
-  let result;
-  if (number % 3 === 0)
-  {
-    result = "Fizz";
-    if(number % 5 ==0) {
-      result = result + "Buzz";
-    }
-  }
-  else {
-    if(number % 5 == 0) 
-      result = "Buzz";
-    else 
-      result = number;
-  }
-  return result;
+function isFizz(numberToEvaluate) {
+  return numberToEvaluate % 3 === 0;
 }
+
+function isBuzz(numberToEvaluate) {
+  return numberToEvaluate % 5 === 0;
+}
+
+function isFizzBuzz(numberToEvaluate) {
+  return numberToEvaluate % 3 === 0 && numberToEvaluate % 5 === 0;
+}
+
+function getFizzBuzzEvaluation(numberToEvaluate) {
+  switch(true) {
+    case (isFizzBuzz(numberToEvaluate)):
+      return "FizzBuzz";
+
+    case (isFizz(numberToEvaluate)):
+      return "Fizz";
+
+    case (isBuzz(numberToEvaluate)):
+      return "Buzz";
+
+    default:
+      return numberToEvaluate;
+  }
+}
+
+
+module.exports = getFizzBuzzEvaluation;
